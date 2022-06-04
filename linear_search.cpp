@@ -6,8 +6,6 @@ void search(int arr[],int n,int key){
      if(arr[i]==key){
          cout<<i;
          break;
-     }else {
-         cout<<"key not found ";
      }
     }
 }
