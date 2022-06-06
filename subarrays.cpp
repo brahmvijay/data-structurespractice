@@ -1,25 +1,14 @@
 #include <iostream>
  using namespace std; 
 void subarray(int arr[],int n ){
-    int large = 0;
     for(int i= 0;i<n;i++){
         for(int j=i;j<n;j++){
-            int sum = 0 ;
-            cout<<"(";
-            for(int k =i;k<j;k++){
-                // cout<<arr[k]<<",";
-                sum = sum + arr[k];
-            }
-
-            cout<<sum<<",";
-            if(large < sum){
-                large = sum ;
+            for(int k=i;k<=j;k++){
+                cout<<arr[k]<<",";
             }
             cout<<endl;
         }
     }
-    cout<<"the largest sum of subbarray is "<<large ;
-
 }
 
 int main(){
